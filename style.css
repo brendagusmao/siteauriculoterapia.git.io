@@ -280,7 +280,7 @@ main {
   margin: 5px;
 }
 
-.lado-direito1 , .lado-esquerdo2 {
+.lado-direito1 , .lado-esquerdo2 , .formcontent{
   width:45%;
   text-align: center;
   line-height: 40px;
@@ -479,9 +479,52 @@ textarea:focus {
   border:1px solid #f0f0f0;
   outline: 0;
 }
+
 @media screen and (max-width: 600px){
   #slide img {
     max-width:412px;
     min-width:400px;
+  }
+
+  .about {
+    margin-top: 525px;
+    margin-left: 0px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 0px 3px 0px rgba(34, 32, 32, 0.30);
+  }
+   .containerabout {
+   margin-left: 0px;
+   }
+  
+  #aboutmetitle h4 {
+    color:transparent;
+  }
+  
+  options {
+    line-height:10px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .formcontent {
+    width:100%;
+    display: none;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  footer img {
+    width:150px;
+    transition: 0.65s;
+  }
+  
+  footer img:hover {
+    transition: 1s;
+    width:180px;
+  
+  }
+  .credit {
+    color:transparent;
   }
 }
