@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+}
+
+.header {
+  position: absolute;
+  background-color: #7bb3b3;
+  height: 253px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(34, 32, 32, 0.15) 0px 1px 5px;
+}
+
+.header h1 {
+  font-family: 'Lora', serif;
+  color: #fff;
+  letter-spacing: 0.9px;
+  font-size: 32px;
+  text-shadow: rgba(34, 32, 32, 0.15) 0px 1px 5px;;
+}
+
+.header img {
+  width: 180px;
+}
+
+/** NIVO SLIDER CSS COMEÇA **/
+#slide {
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  margin: 50px auto;
+  width: auto; /** aqui vc define o tamanho do slider **/
+  top: 200px;
+  left: 0px;
+  z-index:1;
+}
+
+/* The Nivo Slider styles */
+#slider {
+  position: relative;
+  overflow: hidden;
+  background: #333;
+  width: 0px;
+  border: 3px solid #7bb3b3;
+  border-left: 5px solid #7bb3b3;
+  border-right: 5px solid #7bb3b3;
+  box-shadow: inset 1px 2px 3px 1px rgba(34, 32, 32, 0.30);
+}
+#slider img {
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+/** tamanho imagem slide**/
+#slide img {
+  width: 520px;
+  min-width:520px;
+} 
+
+#slider a {
+  border: 0;
+  display: block;
+}
+.nivoSlider {
+  position: relative;
+}
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+}
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+}
+
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 320px;
+  bottom: 0px;
+  background: transparent;
+  color: transparent;
+  width: 0px;
+  z-index: 50;
+  padding: 20px 0;
+  font-family: Georgia;
+  cursor: default;
+  margin-top: 0px;
+}
+
+.nivo-caption p {
+  padding: 0 0px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.nivo-caption a {
+  display: inline !important;
+}
+
+.nivo-html-caption {
+  display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 99;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nivo-prevNav {
+  left: 0px;
+}
+
+.nivo-nextNav {
+  right: 0px;
+}
+
+.nivo-directionNav a {
+  display: block;
+  font-size: 20px;
+  background: rgb(123, 179, 179, 0.5);
+  padding: 5px 10px;
+  box-shadow: 1px 1px 1px #7bb3b3;
+  line-height: 30px;
+  transition: 0.5s;
+
+}
+
+.nivo-directionNav a:hover {
+  background: rgb(244, 188, 172, 1.5);
+  color: #fff;
+  box-shadow: 1px 1px 1px #f4bcac;
+}
+
+a.nivo-nextNav {
+  right: 15px;
+}
+a.nivo-prevNav {
+  left: 15px;
+}
+
+.nivo-caption a {
+  color: #efe9d1;
+  text-decoration: underline;
+}
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+
+.slider a {
+  border: 0;
+  display: block;
+}
+
+.nivo-controlNav {
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  text-align: center;
+  font-family: Georgia, serif;
+  z-index: 9;
+  width: 100%;
+}
+
+.nivo-controlNav a {
+  transition: 0.5s;
+  cursor: pointer;
+  background: transparent;
+  width: 14px;
+  height: 14px;
+  text-shadow: 1px 1px 0px transparent;
+  box-shadow: 1px 1px 1px transparent;
+  margin: 5px;
+  border-radius: 100%;
+  display: inline-block !important;
+}
+
+.nivo-controlNav a:hover {
+  background: transparent;
+
+}
+#slide:hover .nivo-controlNav {
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  height:345px;
+  margin-top: 252px;
+  margin-left: 520px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  width:101%;
+  text-align:justify;
+  background-color:#f6d7cf;
+  align-items: center;
+  padding:10px;
+  box-shadow: inset 1px 2px 3px 1px rgba(34, 32, 32, 0.30);
+  -mox-box-shadow: 0px 1px 5px solid #000;
+}
+
+.about h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 19px;
+  width: 400px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.containerabout {
+  margin-left: 120px;
+  width:70%;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#evaluation-content , footer {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-top:70px;
+  font-size: 12px;
+}
+
+.lado-direito , .lado-esquerdo {
+  width:45%;
+  text-align: center;
+  line-height: 40px;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f0f0f08c;
+  margin: 5px;
+}
+
+.lado-direito1 , .lado-esquerdo2 {
+  width:45%;
+  text-align: center;
+  line-height: 40px;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#evaluation-content h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#aboutmetitle h3{
+  display: inline-block;
+  font-family: 'Lora', serif;
+  font-size: 25px;
+}
+
+#aboutmetitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+#aboutmetitle img{
+  width: 80px;
+  border-radius: 100%;
+  margin:10px;
+  border:10px solid white;
+  box-shadow: 1px 2px 1px 1px rgba(34, 32, 32, 0.15);
+}
+
+#aboutmetitle h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  margin-top:-45px;
+  margin-left:100px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+  line-height: 0px;
+  text-align: left;
+}
+
+li {
+  counter-increment: li;
+  line-height: 30px;  
+  background-color: white;
+  padding-left:15px;
+  margin:5px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+li::before {
+  content: counter(li);
+  color: #7bb3b3;
+  font-weight: bold;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align:left;
+  direction: rtl;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+footer img {
+  width:200px;
+  transition: 0.65s;
+}
+
+footer img:hover {
+  transition: 1s;
+  width:250px;
+
+}
+footer h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+}
+
+options {
+  width:100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 0px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 2px;
+  background-color:#f4bcac54;
+  border-left:5px solid #f4bcacbb;
+  font-size: 13px;
+}
+
+.headerbottom {
+  width:100%;
+  text-align: center;
+  line-height: 40px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #7bb3b3;
+  box-shadow: inset 1px 2px 3px 1px rgba(34, 32, 32, 0.30);
+}
+
+.headerbottom img {
+  width:50px;
+  border-radius: 100%;
+  margin:5px;
+}
+
+.headerbottom h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  color:#fff;
+  text-shadow:1px 1px 1px rgba(34, 32, 32);
+}
+
+.credit {
+  color: #537a7a;
+  text-align: left;
+  font-size: 9px;
+  margin-top:-50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+  outline: 0;
+  color: rgb(0, 0, 0);
+  padding: 7px 0;
+  background-color: #f4bcac48;
+  transition: 0.4s;
+  border: none;
+  border-radius: 2px;
+  border:1px solid #f4bcac48;
+  margin:5px;
+  width: 95%;
+}
+
+input , textarea {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 9px;
+}
+
+input:focus {
+  outline: 0;
+  background-color: #f4bcac48;
+  color: black;
+  border:none;
+}
+
+button {
+  outline: 0;
+  background-color: green;
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(34, 32, 32, 0.35) 0px 5px 5px;
+  margin-left: -5px;
+  width: 95%;
+}
+
+input:focus {
+  outline: 0;
+}
+
+textarea {
+  height:150px;
+  border:1px solid #f0f0f0;
+  background-color: white;
+  width: 95%;
+  margin: 5px;
+}
+textarea:focus {
+  border:1px solid #f0f0f0;
+  outline: 0;
+}
+@media screen and (max-width: 600px){
+  #slide img {
+    max-width:412px;
+    min-width:400px;
+  }
+}
