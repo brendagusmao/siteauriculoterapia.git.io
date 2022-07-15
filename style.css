@@ -482,8 +482,8 @@ textarea:focus {
 
 @media screen and (max-width: 600px){
   #slide img {
-    max-width:412px;
-    min-width:400px;
+    max-width:300px;
+    min-width:3000px;
   }
 
   .about {
