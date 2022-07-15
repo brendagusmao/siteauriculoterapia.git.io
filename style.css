@@ -401,6 +401,7 @@ options {
   line-height: 40px;
   box-sizing: border-box;
   padding: 30px;
+  font-size: 13px;
   background-color: #7bb3b3;
   box-shadow: inset 1px 2px 3px 1px rgba(34, 32, 32, 0.30);
 }
